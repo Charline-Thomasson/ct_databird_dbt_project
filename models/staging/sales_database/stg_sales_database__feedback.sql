@@ -8,4 +8,3 @@ select
  DATETIME(feedback_answer_date, "Europe/Paris") AS feedback_answered_at,
 from {{ source('sales_database', 'feedback') }}
 -- see error below
-GROUP BY order_id
